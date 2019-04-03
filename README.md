@@ -1,3 +1,9 @@
+# Install Guide:Ubuntu 18.04.1
+1. sudo `apt-get install git ant -y`
+
+# Fix Error
+1. add `<compilerarg line="--add-modules java.xml.bind"/>` at line 78 tools/cooja/build.xml
+
 # Contiki-NG: The OS for Next Generation IoT Devices
 
 [![Build Status](https://travis-ci.org/contiki-ng/contiki-ng.svg?branch=master)](https://travis-ci.org/contiki-ng/contiki-ng/branches)
