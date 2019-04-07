@@ -1,8 +1,6 @@
 # Install Guide:Ubuntu 18.04.1
 1. sudo `apt-get install git ant -y`
-
-# Fix Error
-1. add `<compilerarg line="--add-modules java.xml.bind"/>` at line 78 tools/cooja/build.xml
+2. add `<compilerarg line="--add-modules java.xml.bind"/>` at line 78 tools/cooja/build.xml
 
 # Docker MacOS
 1. `export CNG_PATH=/Users/bypazs/Desktop/IoTSim/contiki-ng`
