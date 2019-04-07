@@ -1,11 +1,17 @@
-# Install Guide:Ubuntu 18.04.1
-1. sudo `apt-get install git ant -y`
-2. add `<compilerarg line="--add-modules java.xml.bind"/>` at line 78 tools/cooja/build.xml
+# Install Guide:Docker MacOS
 
-# Docker MacOS
+[Follow Setup1](https://github.com/contiki-ng/contiki-ng/wiki/Docker#setup)
 1. `export CNG_PATH=/Users/bypazs/Desktop/IoTSim/contiki-ng`
 2. `alias contiker="docker run --privileged --mount type=bind,source=$CNG_PATH,destination=/home/user/contiki-ng -e DISPLAY=docker.for.mac.host.internal:0 -v /tmp/.X11-unix:/tmp/.X11-unix -v /var/run/docker.sock:/var/run/docker.sock -ti contiker/contiki-ng"`
-3. `contiker`
+
+[Follow Setup2](https://github.com/contiki-ng/contiki-ng/wiki/Docker#with-xquartz)
+
+[Dockerized UI Apps in Docker for Desktop MacOS 2018+](https://stackoverflow.com/a/53548183)
+
+1. Open new tab `socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DPLAY\"`
+
+2. `contiker cooja`
+
 
 # Contiki-NG: The OS for Next Generation IoT Devices
 
