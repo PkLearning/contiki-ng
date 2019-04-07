@@ -4,6 +4,11 @@
 # Fix Error
 1. add `<compilerarg line="--add-modules java.xml.bind"/>` at line 78 tools/cooja/build.xml
 
+# Docker MacOS
+1. `export CNG_PATH=/Users/bypazs/Desktop/IoTSim/contiki-ng`
+2. `alias contiker="docker run --privileged --mount type=bind,source=$CNG_PATH,destination=/home/user/contiki-ng -e DISPLAY=$DISPLAY -v /var/run/docker.sock:/var/run/docker.sock  -ti contiker/contiki-ng"`
+3. `contiker`
+
 # Contiki-NG: The OS for Next Generation IoT Devices
 
 [![Build Status](https://travis-ci.org/contiki-ng/contiki-ng.svg?branch=master)](https://travis-ci.org/contiki-ng/contiki-ng/branches)
